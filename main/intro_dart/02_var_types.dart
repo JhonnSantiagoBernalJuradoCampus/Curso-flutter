@@ -1,3 +1,5 @@
+import 'dart:math';
+
 void main(){
   final String pokemon = 'Ditto';
   final int hp = 100;
@@ -16,6 +18,11 @@ void main(){
   // dynamic == null
   dynamic errorMessage = 'Hola';
   // dynamic puede ser cualquier tipo de dato en cualquier momento, obvio si no es final
+  errorMessage = true;
+  errorMessage = [1,2,3,4,5];
+  errorMessage = {1,2,3,4,5};
+  errorMessage = () => true;
+  errorMessage = null;
 
   print("""
   $pokemon

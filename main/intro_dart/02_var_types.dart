@@ -13,12 +13,17 @@ void main(){
     }
   });
 
+  // dynamic == null
+  dynamic errorMessage = 'Hola';
+  // dynamic puede ser cualquier tipo de dato en cualquier momento, obvio si no es final
+
   print("""
   $pokemon
   $hp
   $isAlive
   $abilities
+  $errorMessage
   """);
 
 
-}
+} 

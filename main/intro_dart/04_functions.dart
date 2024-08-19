@@ -5,6 +5,9 @@ void main(){
   print('Suma $resultOfPlus');
   int resultOptional = addTwoNumbersOptional(10);
   print('Suma opcional: $resultOptional');
+
+  String resultGreetPerson = greetPerson(name: "Santiago");
+  print(resultGreetPerson);
 }
 
 // String greetEveryone(){
@@ -21,4 +24,9 @@ int addTwoNumbers (int a, int b) => a + b;
 // }
 int addTwoNumbersOptional (int a, [int b = 0]){
   return a + b;
+}
+
+//Datos opcionales
+String greetPerson ({required String name,String message= 'Hola, '}){
+  return message + name;
 }

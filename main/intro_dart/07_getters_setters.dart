@@ -1,5 +1,5 @@
 void main(){
-  final Square mySquare = Square(side:  10);
+  final Square mySquare = Square(side: 0);
   
 
 
@@ -13,7 +13,8 @@ class Square {
   double _side; //side * side
 
   Square({required double side})
-    : _side = side;
+    : assert(side > 0),
+    _side = side;
 
   double get area => _side * _side;
 
